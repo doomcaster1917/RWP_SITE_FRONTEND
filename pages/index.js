@@ -30,7 +30,7 @@ export async function getStaticProps(){
     try {
         const response = await fetch(`${backendAddr}/articles`)
         const articles = await response.json()
-        return {props: {articles}}
+        return { props: {articles}, revalidate: 10}
     }
 
     catch (error){
