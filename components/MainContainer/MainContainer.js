@@ -13,7 +13,7 @@ const MainContainer = ({children, title, description, keywords}) => {
                 <title>{title}</title>
                 <meta name={"description"} content={description}/>
                 <meta name={"keywords"} content={keywords}/>
-                <link rel="icon" type="image/x-icon" href="../static/images/logo.ico"/>
+                <link rel="icon" type="image/x-icon" href="../static/main_logo.ico"/>
             </Head>
             <header>
                 <div className={styles.header}>

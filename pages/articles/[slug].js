@@ -21,6 +21,7 @@ export default Slug;
 export async function getServerSideProps(context) {
      const article_response = await fetch(`${backendAddr}/articles/?slug=${context.query.slug}`)
     const Article = await article_response.json()
+    context.res.setHeader('Cache-Control', 'no-store');
     return {
         props: {Article},
     }
