@@ -2,6 +2,8 @@ import Head from "next/head";
 import styles from "./MainContainer.module.scss"
 import Link from "next/link";
 import Footer from "../Footer/Footer";
+import React, {Suspense} from "react";
+import {Metrika} from "../metriks/mainMetrica";
 // import MinorNavbar from "../headerComponents/MinorNavbar/MinorNavbar";
 // import MajorNavbar from "../headerComponents/MajorNavbar/MajorNavbar";
 // import Footer from "../Footer/Footer";
@@ -16,6 +18,9 @@ const MainContainer = ({children, title, description, keywords}) => {
                 <link rel="icon" type="image/x-icon" href="../static/main_logo.ico"/>
                 <meta name="yandex-verification" content="1560c9f5a49ea6ee"/>
             </Head>
+            <Suspense>
+                <Metrika/>
+            </Suspense>
             <header>
                 <div className={styles.header}>
                     <div className={styles.upper_header}>
