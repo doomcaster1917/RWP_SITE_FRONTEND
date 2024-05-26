@@ -1,0 +1,32 @@
+.article{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  h1{
+    font-family: "Gt Eesti Pro Display Bold", sans-serif;
+    font-size: 35px;
+    margin-top: 12px;
+    text-align: center;
+  }
+  p{
+    font-family: "Gt Eesti Pro Display Thin", sans-serif;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  img{
+    min-width: 700px;
+    max-width: 900px;
+    max-height: 530px;
+  }
+  .read_area{
+    white-space: pre-wrap;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: white;
+    border-radius: 17px;
+  }
+}

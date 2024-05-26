@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body{
+  background: #E52A1E;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'Cantarell Bold';
+  src: url("../static/fonts/Cantarell/Cantarell-Bold.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gt Eesti Pro Display UltraBold';
+  src: url("../static/fonts/Gt eesti pro display/gteestiprodisplay_ultrabold.otf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gt Eesti Pro Display Bold';
+  src: url("../static/fonts/Gt eesti pro display/gteestiprodisplay_bold.otf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gt Eesti Pro Display Medium';
+  src: url("../static/fonts/Gt eesti pro display/gteestiprodisplay_medium.otf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gt Eesti Pro Display Light';
+  src: url("../static/fonts/Gt eesti pro display/gteestiprodisplay_light.otf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gt Eesti Pro Display Thin';
+  src: url("../static/fonts/Gt eesti pro display/gteestiprodisplay_thin.otf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

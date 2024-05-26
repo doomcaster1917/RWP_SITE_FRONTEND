@@ -1,0 +1,10 @@
+.items_layout{
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    column-gap: 5%;
+}

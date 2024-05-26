@@ -1,0 +1,7 @@
+services:
+  app:
+    image: rwp_site
+    container_name: rwp_site-app
+
+
+
