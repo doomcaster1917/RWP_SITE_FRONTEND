@@ -22,10 +22,10 @@ const Index = ({articles}) => {
 
 };
 
-export const dynamic = 'force-static'; export default Index;
+ export default Index;
 
 
-
+export const dynamic = 'force-static';
 export async function getStaticProps(){
     try {
         const response = await fetch(`${backendAddr}/articles`)
