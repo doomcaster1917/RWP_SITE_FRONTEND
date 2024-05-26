@@ -6,14 +6,18 @@ import MainContainer from "../../components/MainContainer/MainContainer";
 
 const Slug = (Article) => {
     return (
-        <div>
-            <MainContainer description = {Article.Article.seo_title}
-                title={Article.Article.title} keywords={Article.Article.keywords}>
-                <CentralBody>
-                    <ArticleFullView>{Article.Article}</ArticleFullView>
-                </CentralBody>
-            </MainContainer>
-        </div>
+        <>
+            {Article.Article.map((artcl) =>
+            <div>
+                <MainContainer description = {artcl?.seo_description}
+                               title={artcl.title} keywords={artcl.keywords}>
+                    <CentralBody>
+                        <ArticleFullView>{Article.Article}</ArticleFullView>
+                    </CentralBody>
+                </MainContainer>
+            </div>
+            )}
+        </>
     );
 };
 
