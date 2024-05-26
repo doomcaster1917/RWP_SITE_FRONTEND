@@ -22,13 +22,15 @@ const Index = ({articles}) => {
 
 };
 
-export default Index;
+export const dynamic = 'force-static'; export default Index;
+
+
 
 export async function getStaticProps(){
     try {
         const response = await fetch(`${backendAddr}/articles`)
         const articles = await response.json()
-        return { props: {articles}, revalidate: 10}
+        return {props: {articles}}
     }
 
     catch (error){
