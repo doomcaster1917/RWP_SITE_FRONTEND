@@ -7,8 +7,8 @@ import MainContainer from "../../components/MainContainer/MainContainer";
 const Slug = (Article) => {
     return (
         <div>
-            <MainContainer metaObj={{description: Article.Article.seo_title,
-                title: Article.Article.name, keywords: Article.Article.keywords}}>
+            <MainContainer description = {Article.Article.seo_title}
+                title={Article.Article.title} keywords={Article.Article.keywords}>
                 <CentralBody>
                     <ArticleFullView>{Article.Article}</ArticleFullView>
                 </CentralBody>
