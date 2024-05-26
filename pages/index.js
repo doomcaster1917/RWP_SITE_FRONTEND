@@ -8,10 +8,8 @@ import Head from "next/head";
 
 const Index = ({articles}) => {
     return (
-        <>  <Head>
-            <title>{"Официальный сайт революционной рабочей партии"}<img src="../static/images/header/meeting.png" alt=""/></title>
-            </Head>
-            <MainContainer
+        <>
+            <MainContainer title={"Официальный сайт революционной рабочей партии"}
                            description={"Официальный сайт революционной рабочей партии"}
                            keywords={"Революционная рабочая партия, РРП, коммунизм, троцкизм"}>
                 <CentralBody>
