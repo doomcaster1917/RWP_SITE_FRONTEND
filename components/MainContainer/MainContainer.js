@@ -14,6 +14,7 @@ const MainContainer = ({children, title, description, keywords}) => {
                 <meta name={"description"} content={description}/>
                 <meta name={"keywords"} content={keywords}/>
                 <link rel="icon" type="image/x-icon" href="../static/main_logo.ico"/>
+                <meta name="yandex-verification" content="1560c9f5a49ea6ee"/>
             </Head>
             <header>
                 <div className={styles.header}>
