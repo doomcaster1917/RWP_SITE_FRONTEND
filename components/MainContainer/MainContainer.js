@@ -6,14 +6,14 @@ import Footer from "../Footer/Footer";
 // import MajorNavbar from "../headerComponents/MajorNavbar/MajorNavbar";
 // import Footer from "../Footer/Footer";
 
-const MainContainer = ({children, metaObj}) => {
+const MainContainer = ({children, title, description, keywords}) => {
     return (
         <>
             <Head>
-                <meta name="keywords" content={metaObj ? "" + metaObj.keywords : "Революционная рабочая партия, rpw, Рабочая Демократия, троцкизм, коммунизм"}/>
-                <meta name="desctiption" content={metaObj ? "name" + metaObj.description:"Сайт революционной рабочей партии и газеты Рабочая Демократия"}/>
-                 <link rel="icon" type="image/x-icon" href="../static/main_logo.ico"/>
-                <title>{metaObj ? metaObj.name: "Главная страница"}</title>
+                <title>{title}</title>
+                <meta name={"description"} content={description}/>
+                <meta name={"keywords"} content={keywords}/>
+                <link rel="icon" type="image/x-icon" href="../static/images/logo.ico"/>
             </Head>
             <header>
                 <div className={styles.header}>

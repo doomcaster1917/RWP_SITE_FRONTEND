@@ -8,7 +8,9 @@ import backendAddr from "../config/endpoints";
 const Index = ({articles}) => {
     return (
         <>
-            <MainContainer>
+            <MainContainer title={"Революционная рабочая партия"}
+                           description={"Официальный сайт революционной рабочей партии"}
+                           keywords={"Революционная рабочая партия, РРП, коммунизм, троцкизм"}>
                 <CentralBody>
                     <Slider></Slider>
                     <ArticlesArea>{articles}</ArticlesArea>
