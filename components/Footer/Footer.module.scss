@@ -24,3 +24,13 @@
     width: 200px;
     height: 200px;
 }
+
+@media screen and (orientation: portrait){
+  .qr_code{
+    width: 24vw;
+    height: 24vw;
+    margin-right: 3vw;
+    margin-left: 2vw;
+    display: none;
+  }
+}

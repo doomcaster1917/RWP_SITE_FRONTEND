@@ -1,0 +1,23 @@
+.white_block{
+  width: 98%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  white-space: pre-wrap;
+  text-decoration: none;
+  color: black;
+  background: white;
+  border-radius: 21px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  img{
+    width: 400px;
+  }
+}
+
+@media screen and (orientation: portrait){
+  .white_block{
+    flex-direction: column;
+  }
+}

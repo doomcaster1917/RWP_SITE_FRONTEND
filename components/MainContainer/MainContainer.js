@@ -17,6 +17,7 @@ const MainContainer = ({children, title, description, keywords}) => {
                 <meta name={"keywords"} content={keywords}/>
                 <link rel="icon" type="image/x-icon" href="../static/main_logo.ico"/>
                 <meta name="yandex-verification" content="1560c9f5a49ea6ee"/>
+
             </Head>
             <Suspense>
                 <Metrika/>
@@ -27,18 +28,25 @@ const MainContainer = ({children, title, description, keywords}) => {
                         <div className={styles.upper_container}>
                             <img src="../static/images/header/meeting.png" alt="" className={styles.meeting_img}/>
                             <Link href={'/'}>
-                            <img src="../static/images/emblems/main_logo.png" alt="" className={styles.main_logo}/>
+                                <img src="../static/images/emblems/main_logo.png" alt="" className={styles.main_logo}/>
                             </Link>
-                            Революционная <br/>
-                            {"          "} Рабочая Партия
+                            <div className={styles.party_name}>
+                                Революционная <br/>
+                                {"          "} Рабочая Партия
+                            </div>
+                            <div className={styles.party_name_mobile}>
+                                Революционная {"   "} Рабочая Партия
+                            </div>
                         </div>
                     </div>
                     <div className={styles.middle_header}>
-                        <div className={styles.navbar}>
-                            <Link href={'/our_course'}>Наш курс</Link>
-                            <Link href={'ya.ru'}>Политика</Link>
-                            <Link href={'ya.ru'}>Устав партии</Link>
-                            <Link href={'ya.ru'}>Кампании</Link>
+                        <div className={styles.nav_wrapper}>
+                            <div className={styles.navbar}>
+                                <Link href={'/our_course'}>Наш курс</Link>
+                                <Link href={'ya.ru'}>Политика</Link>
+                                <Link href={'/regulation'}>Устав партии</Link>
+                                <Link href={'/the_campaigns'}>Кампании</Link>
+                            </div>
                         </div>
                     </div>
                     <div className={styles.lower_header}>

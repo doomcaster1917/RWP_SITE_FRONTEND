@@ -3,3 +3,10 @@
  overflow: hidden;
  cursor: pointer;
 }
+
+@media screen and (orientation: portrait){
+  .carousel{
+   margin-top: 2vh;
+   border-radius: 24px;
+  }
+}

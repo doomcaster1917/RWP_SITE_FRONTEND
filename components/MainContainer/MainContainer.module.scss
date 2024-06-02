@@ -47,6 +47,13 @@
   font-size: 58px;
   letter-spacing: 1px;
   white-space: pre-wrap;
+  .party_name{
+    position: relative;
+    right: 50px;
+  }
+  .party_name_mobile{
+    display: none;
+  }
 }
 
 .middle_header{
@@ -85,11 +92,13 @@
 }
 
 .navbar{
-  width: 1280px;
+  width: 1080px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  column-gap: 4.5%;
+  justify-content: flex-start;
+  column-gap: 6%;
+  //margin-right: 100px;
+
   a{
     text-decoration: none;
     color: white;
@@ -99,6 +108,14 @@
   }
 }
 
+.nav_wrapper{
+    width: 900px;
+    margin-left: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
 .body_container{
   padding-left: 3vw;//10.38vw;
   padding-right: 3vw;//10.38vw;
@@ -106,3 +123,5 @@
   margin-top: 2%;
   @extend %flexbox_column
 }
+
+@import "MCMobile";
