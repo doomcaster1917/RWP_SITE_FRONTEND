@@ -14,7 +14,7 @@ const TheCampaigns = () => {
             }}>
                 <CentralBody>
                     <WhiteFullWidthBlock img={'../static/images/campaigns/WB.jpg'}
-                                         text={'Компания по защите прав работников склада Wildberryes'}></WhiteFullWidthBlock>
+                                         text={'Кампания по защите прав работников склада Wildberryes'}></WhiteFullWidthBlock>
                 </CentralBody>
             </MainContainer>
         </div>
