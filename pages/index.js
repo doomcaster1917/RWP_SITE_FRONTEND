@@ -10,8 +10,8 @@ const Index = ({articles}) => {
     return (
         <>
             <MainContainer title={"Официальный сайт революционной рабочей партии"}
-                           description={"Официальный сайт революционной рабочей партии"}
-                           keywords={"Революционная рабочая партия, РРП, коммунизм, троцкизм"}>
+                           description={"Официальный сайт РРП, революционной рабочей партии"}
+                           keywords={"революционная рабочая партия, РРП, коммунизм, сайт РРП"}>
                 <CentralBody>
                     <Slider></Slider>
                     <ArticlesArea>{articles}</ArticlesArea>

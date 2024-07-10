@@ -10,7 +10,7 @@ const Slug = (Article) => {
             {Article.Article.map((artcl) =>
             <div>
                 <MainContainer description = {artcl?.seo_description}
-                               title={artcl.title} keywords={artcl.keywords}>
+                               title={artcl.title} keywords={artcl.seo_keywords}>
                     <CentralBody>
                         <ArticleFullView>{Article.Article}</ArticleFullView>
                     </CentralBody>
