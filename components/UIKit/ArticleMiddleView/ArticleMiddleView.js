@@ -7,7 +7,7 @@ import backendAddr from "../../../config/endpoints";
 const ArticleMiddleView = ({children}) => {
     const router = useRouter()
     return (
-        <Link href={{pathname:`/articles/${children.slug}`, query:{slug:children.slug}}}
+        <Link href={{pathname:`/articles/${children.slug}`}}
               className={styles.article_middle_view}>
             <img src={`${backendAddr}${children?.image}`} alt=""/>
             <div className={styles.name}>
