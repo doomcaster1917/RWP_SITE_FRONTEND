@@ -9,7 +9,7 @@ import Head from "next/head";
 const Index = ({articles}) => {
     return (
         <>
-            <MainContainer title={"Официальный сайт революционной рабочей партии"}
+            <MainContainer title={"Официальный сайт революционной рабочей партии | РРП"}
                            description={"Официальный сайт РРП, революционной рабочей партии"}
                            keywords={"революционная рабочая партия, РРП, коммунизм, сайт РРП"}>
                 <CentralBody>
