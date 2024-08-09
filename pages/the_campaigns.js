@@ -8,10 +8,10 @@ import WhiteFullWidthBlock from "../components/UIKit/WhiteFullWidthBlock/WhiteFu
 const TheCampaigns = () => {
     return (
         <div>
-            <MainContainer metaObj={{
-                description: "Кампании партии",
-                title: "Кампании партии", keywords: "коммунизм, рабочее движение, троцкизм, права рабочих"
-            }}>
+            <MainContainer
+                description={"Общественные кампании Революционной Рабочей Партии"}
+                title={"Кампании РРП"} keywords={"общественные кампании, рабочее движение, защита прав рабочих"}
+           >
                 <CentralBody>
                     <WhiteFullWidthBlock img={'../static/images/campaigns/WB.jpg'}
                                          text={'Кампания по защите прав работников склада Wildberryes'}></WhiteFullWidthBlock>

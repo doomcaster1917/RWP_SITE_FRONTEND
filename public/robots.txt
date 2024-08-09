@@ -1,0 +1,4 @@
+User-agent: *
+
+# Sitemaps
+Sitemap: https://rwp.red/sitemap.xml

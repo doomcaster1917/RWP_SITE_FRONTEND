@@ -6,10 +6,10 @@ import ArticleFullView from "../components/ArticleFullView/ArticleFullView";
 const Regulation = () => {
     return (
         <div>
-            <MainContainer metaObj={{
-                description: "Кампании партии",
-                title: "Кампании партии", keywords: "коммунизм, рабочее движение, троцкизм, права рабочих"
-            }}>
+            <MainContainer
+                description={"Устав Революционной Рабочей Партии"}
+                title={"Устав Революционной Рабочей Партии"} keywords={"коммунизм, рабочее движение, троцкизм, права рабочих"}
+            >
                 <CentralBody>
                     <ArticleFullView>{[{title: 'Устав РРП', full_description: 'Политической целью организации является установление рабочей власти в стране и коммунистическая революция во всем мире.\n' +
                             '\n' +

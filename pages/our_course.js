@@ -6,10 +6,10 @@ import ArticleFullView from "../components/ArticleFullView/ArticleFullView";
 let OurCourse = ({OurCourse}) => {
     return (
         <div>
-            <MainContainer metaObj={{
-                description: "Курс коммунистической партии",
-                title: "Наш политический курс", keywords: "коммунизм, рабочее движение, троцкизм, права рабочих"
-            }}>
+            <MainContainer
+                description={"Курс нашей коммунистической партии"}
+                title={"Наш политический курс"} keywords={"коммунизм, рабочее движение, троцкизм, права рабочих"}
+            >
                 <CentralBody>
                     <ArticleFullView>{OurCourse}</ArticleFullView>
                 </CentralBody>
