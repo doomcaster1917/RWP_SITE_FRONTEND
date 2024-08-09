@@ -17,7 +17,6 @@ const MainContainer = ({children, title, description, keywords}) => {
                 <meta name={"keywords"} content={keywords}/>
                 <link rel="icon" type="image/x-icon" href="../static/main_logo.ico"/>
                 <meta name="yandex-verification" content="1560c9f5a49ea6ee"/>
-
             </Head>
             <Suspense>
                 <Metrika/>
@@ -43,7 +42,7 @@ const MainContainer = ({children, title, description, keywords}) => {
                         <div className={styles.nav_wrapper}>
                             <div className={styles.navbar}>
                                 <Link href={'/our_course'}>Наш курс</Link>
-                                <Link href={'ya.ru'}>Политика</Link>
+                                {/*<Link href={'ya.ru'}>Политика</Link>*/}
                                 <Link href={'/regulation'}>Устав партии</Link>
                                 <Link href={'/the_campaigns'}>Кампании</Link>
                             </div>
