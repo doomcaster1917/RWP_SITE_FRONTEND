@@ -41,7 +41,7 @@ const MainContainer = ({children, title, description, keywords}) => {
                     <div className={styles.middle_header}>
                         <div className={styles.nav_wrapper}>
                             <div className={styles.navbar}>
-                                <Link href={'/our_course'}>Наш курс</Link>
+                                {/*<Link href={'/our_course'}>Наш курс</Link>*/}
                                 {/*<Link href={'ya.ru'}>Политика</Link>*/}
                                 <Link href={'/regulation'}>Устав партии</Link>
                                 <Link href={'/the_campaigns'}>Кампании</Link>
