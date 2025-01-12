@@ -1,3 +1,3 @@
-const backendAddr = 'https://api.rwp.red'
+const backendAddr = 'https://api.cwdis.ru'
 
 export default backendAddr

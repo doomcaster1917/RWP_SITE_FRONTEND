@@ -30,11 +30,12 @@ const MainContainer = ({children, title, description, keywords}) => {
                                 <img src="../static/images/emblems/main_logo.png" alt="" className={styles.main_logo}/>
                             </Link>
                             <div className={styles.party_name}>
-                                Революционная <br/>
-                                {"          "} Рабочая Партия
+                                Комитет за рабочую демократию <br/>
+                                {"       "} и международный социализм
                             </div>
                             <div className={styles.party_name_mobile}>
-                                Революционная {"   "} Рабочая Партия
+                                Комитет за рабочую демократию <br/>
+                                {""} и международный социализм
                             </div>
                         </div>
                     </div>
