@@ -52,10 +52,10 @@ const MainContainer = ({children, title, description, keywords}) => {
                     <div className={styles.lower_header}>
                         <div className={styles.lower_navbar}>
                             Читайте нас в соцсетях:
-                            <Link href={"https://vk.com/rwp_rrp"}>
+                            <Link href={"https://vk.com/cwdiscentre"}>
                                 <img src="../static/social_media/emblems/vk_emblem.png" alt=""/>
                             </Link>
-                            <Link href={"https://t.me/rewrabpart"}>
+                            <Link href={"https://t.me/cwdis"}>
                                 <img src="../static/social_media/emblems/tg_emblem.png" alt=""/>
                             </Link>
                         </div>
