@@ -4,9 +4,9 @@ import Link from "next/link";
 import Footer from "../Footer/Footer";
 import React, {Suspense} from "react";
 import {Metrika} from "../metriks/mainMetrica";
-// import MinorNavbar from "../headerComponents/MinorNavbar/MinorNavbar";
-// import MajorNavbar from "../headerComponents/MajorNavbar/MajorNavbar";
-// import Footer from "../Footer/Footer";
+import Image from 'next/image'
+import HeaderImage from "/static/images/header/header_img.png";
+import HeaderImageMobile from "/static/images/header/header_img_mobile.png";
 
 const MainContainer = ({children, title, description, keywords}) => {
     return (
@@ -21,47 +21,32 @@ const MainContainer = ({children, title, description, keywords}) => {
             <Suspense>
                 <Metrika/>
             </Suspense>
-            <header>
-                <div className={styles.header}>
-                    <div className={styles.upper_header}>
-                        <div className={styles.upper_container}>
-                            <img src="../static/images/header/meeting.png" alt="" className={styles.meeting_img}/>
-                            <Link href={'/'}>
-                                <img src="../static/images/emblems/main_logo.png" alt="" className={styles.main_logo}/>
-                            </Link>
-                            <div className={styles.party_name}>
-                                Комитет за рабочую демократию <br/>
-                                {"       "} и международный социализм
-                            </div>
-                            <div className={styles.party_name_mobile}>
-                                Комитет за рабочую демократию <br/>
-                                {""} и международный социализм
-                            </div>
-                        </div>
-                    </div>
-                    <div className={styles.middle_header}>
-                        <div className={styles.nav_wrapper}>
-                            <div className={styles.navbar}>
-                                {/*<Link href={'/our_course'}>Наш курс</Link>*/}
-                                {/*<Link href={'ya.ru'}>Политика</Link>*/}
-                                <Link href={'/regulation'}>Устав партии</Link>
-                                <Link href={'/the_campaigns'}>Кампании</Link>
-                            </div>
-                        </div>
-                    </div>
-                    <div className={styles.lower_header}>
-                        <div className={styles.lower_navbar}>
-                            Читайте нас в соцсетях:
-                            <Link href={"https://vk.com/cwdiscentre"}>
-                                <img src="../static/social_media/emblems/vk_emblem.png" alt=""/>
-                            </Link>
-                            <Link href={"https://t.me/cwdis"}>
-                                <img src="../static/social_media/emblems/tg_emblem.png" alt=""/>
-                            </Link>
-                        </div>
-                    </div>
+
+            <Link href={'/'} className={styles.header_logo}>
+                    <Image src={HeaderImage} alt='logo' priority={true} quality={100}/>
+            </Link>
+            <Link href={'/'} className={styles.header_logo_mobile}>
+                <Image src={HeaderImageMobile} alt='logo' priority={true} quality={100}/>
+            </Link>
+            <div className={styles.middle_header}>
+                <div className={styles.navbar}>
+                    {/*<Link href={'/our_course'}>Наш курс</Link>*/}
+                    {/*<Link href={'ya.ru'}>Политика</Link>*/}
+                    <Link href={'/regulation'}>Устав партии</Link>
+                    <Link href={'/the_campaigns'}>Кампании</Link>
                 </div>
-            </header>
+            </div>
+            <div className={styles.lower_header}>
+                <div className={styles.lower_navbar}>
+                    Читайте нас в соцсетях:
+                    <Link href={"https://vk.com/cwdiscentre"}>
+                        <img src="../static/social_media/emblems/vk_emblem.png" alt=""/>
+                    </Link>
+                    <Link href={"https://t.me/cwdis"}>
+                        <img src="../static/social_media/emblems/tg_emblem.png" alt=""/>
+                    </Link>
+                </div>
+            </div>
             <div className={styles.body_container}>
                 {children}
             </div>

@@ -4,9 +4,9 @@
  cursor: pointer;
 }
 
-@media screen and (orientation: portrait){
+@media screen and (max-width: 950px){
   .carousel{
-   margin-top: 2vh;
+   margin-top: 0;
    border-radius: 24px;
   }
 }
