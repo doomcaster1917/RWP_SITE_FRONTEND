@@ -29,7 +29,7 @@
 }
 
 .lower_header{
-    height: 25px;
+    height: auto;
     width: 100vw;
     background-color: white;
     display: flex;
@@ -39,7 +39,7 @@
 
 .lower_navbar{
   width: 1280px;
-  height: 60px;
+  height: auto;
   background-color: white;
   display: flex;
   flex-direction: row;
@@ -60,7 +60,6 @@
   flex-direction: row;
   justify-content: space-around;
   column-gap: 6%;
-  margin-left: 400px;
   //margin-right: 100px;
 
   a{
@@ -75,9 +74,8 @@
 .body_container{
   padding-left: 3vw;//10.38vw;
   padding-right: 3vw;//10.38vw;
-  padding-top: 3px;
-  margin-top: 2%;
   @extend %flexbox_column
+
 }
 
 @import "MCMobile";
