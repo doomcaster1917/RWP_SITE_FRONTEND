@@ -9,9 +9,9 @@ import Head from "next/head";
 const Index = ({articles}) => {
     return (
         <>
-            <MainContainer title={"Официальный сайт революционной рабочей партии | РРП"}
-                           description={"Официальный сайт РРП, революционной рабочей партии"}
-                           keywords={"революционная рабочая партия, РРП, коммунизм, сайт РРП"}>
+            <MainContainer title={"Официальный сайт КРДМС|CWDIS"}
+                           description={"Официальный сайт Комитета За Рабочую Демократию и Международный Социализм"}
+                           keywords={"КРДМС, ррп, троцкизм"}>
                 <CentralBody>
                     <Slider></Slider>
                     <ArticlesArea>{articles}</ArticlesArea>

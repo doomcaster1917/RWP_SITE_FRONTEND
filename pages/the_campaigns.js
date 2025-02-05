@@ -9,8 +9,8 @@ const TheCampaigns = () => {
     return (
         <div>
             <MainContainer
-                description={"Общественные кампании Революционной Рабочей Партии"}
-                title={"Кампании РРП"} keywords={"общественные кампании, рабочее движение, защита прав рабочих"}
+                description={"Общественные кампании КРДМС"}
+                title={"Кампании КРДМС"} keywords={"общественные кампании, рабочее движение, защита прав рабочих"}
            >
                 <CentralBody>
                     <WhiteFullWidthBlock img={'../static/images/campaigns/WB.jpg'}
