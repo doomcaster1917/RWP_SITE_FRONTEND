@@ -1,4 +1,4 @@
 User-agent: *
 
 # Sitemaps
-Sitemap: https://rwp.red/sitemap.xml
+Sitemap: https://cwdis.ru/sitemap.xml
