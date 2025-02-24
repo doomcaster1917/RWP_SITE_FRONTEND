@@ -23,10 +23,16 @@ const Slug = (Article) => {
 
 export default Slug;
 export async function getServerSideProps(context) {
-     const article_response = await fetch(`${backendAddr}/articles/?slug=${context.query.slug}`)
-    const Article = await article_response.json()
-    context.res.setHeader('Cache-Control', 'no-store');
-    return {
-        props: {Article},
+    const article_response = await fetch(`${backendAddr}/articles/?slug=${context.query.slug}`)
+    if(article_response.status === 200){
+        const Article = await article_response.json()
+        context.res.setHeader('Cache-Control', 'no-store');
+        return {
+            props: {Article},
+        }
+    }else{
+        return {
+            notFound: true
+        }
     }
 }
