@@ -12,8 +12,8 @@ const Slider = () =>{
             <div className={styles.carousel}>
                 <Carousel showArrows={true} autoPlay={true} infiniteLoop={true} showThumbs={false} interval={6000}
                           showStatus={false} onClickItem={(index, item) => router.push(item?.props?.href)}>
-                        <Link href={'/articles/Ivan_Ilyin'} style={{"cursor": 'pointer'}}>
-                            <img src="../static/images/banners/Ilyin_banner.png" alt="image2"/>
+                        <Link href={'/articles/Chernysheva_RK1_4'} style={{"cursor": 'pointer'}}>
+                            <img src="../static/images/banners/chernishova.png" alt="image2"/>
                         </Link>
 
                         <Link href={'/ya'}>
